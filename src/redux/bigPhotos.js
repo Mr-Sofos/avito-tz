@@ -11,7 +11,6 @@ export const bigPhotosReducer = (state = initialState, action) => {
     case 'popUp/load/start':
       return {
         ...state,
-        opened: action.payload,
       };
 
     case 'popUp/load/success':
@@ -19,6 +18,7 @@ export const bigPhotosReducer = (state = initialState, action) => {
         ...state,
         bigPhotos: action.payload,
         comments: action.payload.comments,
+        opened: action.payload,
         loading: false,
       };
 

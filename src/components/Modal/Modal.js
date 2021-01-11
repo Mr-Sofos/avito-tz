@@ -36,7 +36,7 @@ function Modal() {
       ) : (
         <div className="modal-window">
           <div className="modal-image">
-            <Image images={images} key={images.id} />
+            <Image url={images.url} key={images.id} />
             <AddComment />
           </div>
           {comments.map((comment) => {
